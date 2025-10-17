@@ -232,7 +232,7 @@ def main():
     try:
         for idx, entry in enumerate(data, 1):
             # print(f"[{idx}/{total_entries}] Processing: {entry.get('file', '')}")
-            print(f"[{idx}/{total_entries}]\r")
+            print(f"\r[{idx}/{total_entries}]", end="", flush=True)
             processed_entry = process_entry(entry, source_roots)
             processed_data.append(processed_entry)
     except KeyboardInterrupt:
