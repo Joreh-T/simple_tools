@@ -231,7 +231,7 @@ def main():
     processed_data = []
     try:
         for idx, entry in enumerate(data, 1):
-            print(f"[{idx}/{total_entries}] Processing: {entry.get('file', '')}")
+            # print(f"[{idx}/{total_entries}] Processing: {entry.get('file', '')}")
             print(f"[{idx}/{total_entries}]\r")
             processed_entry = process_entry(entry, source_roots)
             processed_data.append(processed_entry)
